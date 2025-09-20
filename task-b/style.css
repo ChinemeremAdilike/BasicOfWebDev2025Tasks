@@ -1,0 +1,39 @@
+/*
+Author: Chinemerem Adilike
+Date: 2025-09-21
+*/
+
+body {
+  background-color: #f0f8ff; /* Light blue background */
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: darkblue;
+  font-size: 36px;
+}
+
+p {
+  color: #333333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: square;
+  color: #444444;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+  color: #222222;
+}
+
+a {
+  color: rgb(241, 14, 14);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
