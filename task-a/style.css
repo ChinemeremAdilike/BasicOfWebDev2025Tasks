@@ -1,0 +1,27 @@
+/*
+  Author: Chinemerem Adilike
+  Date: 2025-09-21
+  Description: Styles for my web page
+*/
+body {
+  background-color: #f0f8ff; /* light blue background */
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #2e8b57; /* green */
+  font-size: 36px;
+}
+
+p {
+  color: #333333; /* dark gray */
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
