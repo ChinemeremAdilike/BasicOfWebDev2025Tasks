@@ -1,0 +1,70 @@
+/*
+Author: Chinemerem Adilike
+Date: 2025-10-05
+*/
+
+/* Element selectors */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 20px;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #004080;
+}
+
+/* ID selector */
+#special-message {
+  background-color: #d9edf7;
+  border-left: 4px solid #31708f;
+  padding: 10px;
+  color: #31708f;
+}
+
+/* Class selectors */
+.box {
+  background-color: #e6ffe6;
+  border: 2px solid #33cc33;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.highlight {
+  background-color: #fff3cd;
+  border: 2px solid #ffcc00;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/* Group selectors */
+h1, h2, h3 {
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Descendant selectors */
+section ul li {
+  color: #006600;
+  margin-left: 20px;
+}
+
+/* Attribute selectors */
+a[target="_blank"] {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+img[alt] {
+  border: 2px solid #999;
+  border-radius: 5px;
+  width: 200px;
+  height: auto;
+}
+
+/* Hover effect */
+a:hover {
+  color: #ff6600;
+  text-decoration: none;
+}
