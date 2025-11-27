@@ -1,0 +1,115 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catalog – RentIt Car Rentals</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-6 text-center">
+    <h1 class="text-3xl font-bold">RentIt Car Rentals</h1>
+    <nav class="mt-2">
+      <a href="index.html" class="underline">Home</a>
+      <a href="catalog.html" class="underline ml-4">Catalog</a>
+    </nav>
+  </header>
+
+  <!-- Intro -->
+  <main class="max-w-screen-lg mx-auto px-4 py-8 space-y-12">
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Our Catalog</h2>
+      <p>Explore our full fleet — from compact sedans to spacious vans — available for daily or weekly rentals.</p>
+    </section>
+
+    <!-- Product Grid -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Available Vehicles</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+        <!-- Economy Sedan -->
+        <figure class="bg-white p-4 rounded shadow">
+          <img src="example.jpg" alt="Economy Sedan parked on scenic road" class="w-full h-48 object-cover rounded mb-2" loading="lazy">
+          <figcaption class="font-medium text-center">
+            Economy Sedan<br>
+            <span class="text-sm text-gray-600">Compact and fuel-efficient, perfect for city trips.</span><br>
+            <span class="text-blue-700 font-semibold">39 €/d, 199 €/wk</span>
+          </figcaption>
+        </figure>
+
+        <!-- Spacious SUV -->
+        <figure class="bg-white p-4 rounded shadow">
+          <img src="whitesuv.jpg" alt="Spacious SUV on mountain road" class="w-full h-48 object-cover rounded mb-2" loading="lazy">
+          <figcaption class="font-medium text-center">
+            Spacious SUV<br>
+            <span class="text-sm text-gray-600">Roomy and powerful, ideal for family adventures.</span><br>
+            <span class="text-blue-700 font-semibold">59 €/d, 299 €/wk</span>
+          </figcaption>
+        </figure>
+
+        <!-- Family Van -->
+        <figure class="bg-white p-4 rounded shadow">
+          <img src="blackvanfamily.jpg" alt="Family Van with scenic backdrop" class="w-full h-48 object-cover rounded mb-2" loading="lazy">
+          <figcaption class="font-medium text-center">
+            Family Van<br>
+            <span class="text-sm text-gray-600">Spacious and comfortable, perfect for group travel.</span><br>
+            <span class="text-blue-700 font-semibold">69 €/d, 349 €/wk</span>
+          </figcaption>
+        </figure>
+
+        <!-- Electric Hatchback -->
+        <figure class="bg-white p-4 rounded shadow">
+          <img src="electriccar.jpg" alt="Electric hatchback parked near charging station" class="w-full h-48 object-cover rounded mb-2" loading="lazy">
+          <figcaption class="font-medium text-center">
+            Electric Hatchback<br>
+            <span class="text-sm text-gray-600">Eco-friendly and agile, great for urban driving.</span><br>
+            <span class="text-blue-700 font-semibold">45 €/d, 229 €/wk</span>
+          </figcaption>
+        </figure>
+
+        <!-- Luxury Coupe -->
+        <figure class="bg-white p-4 rounded shadow">
+          <img src="coupe.png" alt="Luxury coupe on open highway" class="w-full h-48 object-cover rounded mb-2" loading="lazy">
+          <figcaption class="font-medium text-center">
+            Luxury Coupe<br>
+            <span class="text-sm text-gray-600">Stylish and fast, designed for premium comfort.</span><br>
+            <span class="text-blue-700 font-semibold">89 €/d, 449 €/wk</span>
+          </figcaption>
+        </figure>
+
+        <!-- Cargo Van -->
+        <figure class="bg-white p-4 rounded shadow">
+          <img src="cargovan.jpg" alt="Cargo van parked near warehouse" class="w-full h-48 object-cover rounded mb-2" loading="lazy">
+          <figcaption class="font-medium text-center">
+            Cargo Van<br>
+            <span class="text-sm text-gray-600">Reliable and spacious, ideal for deliveries and moves.</span><br>
+            <span class="text-blue-700 font-semibold">55 €/d, 279 €/wk</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">RentIt Promotional Video</h2>
+      <video controls preload="metadata" poster="poster.jpg" class="w-full aspect-video rounded shadow">
+        <source src="intro.mp4" type="video/mp4">
+        <source src="intro.webm" type="video/webm">
+        <track src="captions.vtt" kind="captions" srclang="en" label="English">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 text-center">
+    <p>Contact us: info@rentit.fi | +358 46 550 0660</p>
+    <div class="mt-2 space-x-4">
+      <a href="#" class="underline">Facebook</a>
+      <a href="#" class="underline">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
