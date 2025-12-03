@@ -107,9 +107,13 @@
         </fieldset>
 
         <!-- Submit -->
-        <button type="submit" class="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-700">
-          Submit Rental Request
-        </button>
+        <div class="flex justify-center">
+          <button type="submit"
+           class="bg-blue-900 text-white px-6 py-2 rounded shadow hover:bg-blue-700 transition">
+           Submit Rental Request
+          </button>
+        </div>
+
       </form>
     </section>
   </main>
@@ -122,5 +126,21 @@
       <a href="#" class="underline">Instagram</a>
     </div>
   </footer>
+  <script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    const start = new Date(document.getElementById("start").value);
+    const end = new Date(document.getElementById("end").value);
+
+    if (end < start) {
+      e.preventDefault();
+      alert("End date must be after start date.");
+    }
+  });
+</script>
+<script>
+  // Set today's date as the minimum for start date
+  const today = new Date().toISOString().split("T")[0];
+  document.getElementById("start").setAttribute("min", today);
+</script>
 </body>
 </html>
