@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Order – RentIt Car Rentals</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-6 text-center">
+    <h1 class="text-3xl font-bold">RentIt Car Rentals</h1>
+    <nav class="mt-2">
+      <!-- Adjust paths depending on your folder structure -->
+      <a href="../task-i/index.html" class="underline">Home</a>
+      <a href="../task-i/task-j/catalog.html" class="underline ml-4">Catalog</a>
+      <a href="order.html" class="underline ml-4">Order</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-screen-md mx-auto px-4 py-8 space-y-12">
+
+    <!-- Intro -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Place Your Rental Order</h2>
+      <p>Use this form to request a rental vehicle. Choose your car, select your rental period, and provide your details. We’ll confirm your booking quickly and get you on the road.</p>
+    </section>
+
+    <!-- Order Form -->
+    <section>
+      <form action="thanks.html" method="post" class="bg-white p-6 rounded shadow space-y-6">
+
+        <!-- Customer Information -->
+        <fieldset class="space-y-4">
+          <legend class="text-xl font-semibold">Customer Information</legend>
+
+          <div>
+            <label for="fullname" class="block font-medium">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required class="w-full border rounded px-3 py-2">
+          </div>
+
+          <div>
+            <label for="email" class="block font-medium">Email Address</label>
+            <input type="email" id="email" name="email" required class="w-full border rounded px-3 py-2">
+          </div>
+
+          <div>
+            <label for="phone" class="block font-medium">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required class="w-full border rounded px-3 py-2">
+          </div>
+        </fieldset>
+
+        <!-- Rental Details -->
+        <fieldset class="space-y-4">
+          <legend class="text-xl font-semibold">Rental Details</legend>
+
+          <div>
+            <label for="item" class="block font-medium">Item to Rent</label>
+            <select id="item" name="item" required class="w-full border rounded px-3 py-2">
+              <option value="">-- Select a vehicle --</option>
+              <option value="sedan">Economy Sedan</option>
+              <option value="suv">Spacious SUV</option>
+              <option value="van">Family Van</option>
+              <option value="hatchback">Electric Hatchback</option>
+              <option value="coupe">Luxury Coupe</option>
+              <option value="cargo">Cargo Van</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="start" class="block font-medium">Start Date</label>
+              <input type="date" id="start" name="start" required class="w-full border rounded px-3 py-2">
+            </div>
+            <div>
+              <label for="end" class="block font-medium">End Date</label>
+              <input type="date" id="end" name="end" required class="w-full border rounded px-3 py-2">
+            </div>
+          </div>
+
+          <div>
+            <label for="quantity" class="block font-medium">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" required class="w-full border rounded px-3 py-2">
+          </div>
+        </fieldset>
+
+        <!-- Additional Info -->
+        <fieldset class="space-y-4">
+          <legend class="text-xl font-semibold">Additional Information</legend>
+
+          <div>
+            <label for="message" class="block font-medium">Special Wishes / Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full border rounded px-3 py-2"></textarea>
+          </div>
+
+          <div class="space-y-2">
+            <label class="flex items-center">
+              <input type="checkbox" id="terms" name="terms" required class="mr-2">
+              I accept the rental terms and privacy policy
+            </label>
+            <label class="flex items-center">
+              <input type="checkbox" id="newsletter" name="newsletter" class="mr-2">
+              Subscribe to newsletter
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Submit -->
+        <button type="submit" class="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-700">
+          Submit Rental Request
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 text-center">
+    <p>Contact us: info@rentit.fi | +358 46 550 0660</p>
+    <div class="mt-2 space-x-4">
+      <a href="#" class="underline">Facebook</a>
+      <a href="#" class="underline">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
