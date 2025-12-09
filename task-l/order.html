@@ -28,7 +28,7 @@
 
     <!-- Order Form -->
     <section aria-labelledby="order-form">
-      <form action="thanks.html" method="post" class="bg-white p-6 rounded shadow space-y-6" novalidate>
+      <form action="thanks.html" method="post" class="bg-white p-6 rounded shadow space-y-6">
         <!-- Customer Information -->
         <fieldset class="space-y-4">
           <legend class="text-xl font-semibold">Customer Information</legend>
@@ -182,8 +182,23 @@
 
     // On submit: block if invalid
     document.querySelector("form").addEventListener("submit", function (e) {
-      const ok = validateDates();
-      if (!ok) e.preventDefault();
+      const msgs = [];
+
+      // Terms checkbox validation
+      const termsChecked = document.getElementById("terms").checked;
+      if (!termsChecked) {
+        msgs.push("You must accept the rental terms before submitting.");
+      }
+
+      // Date validation
+      if (!validateDates()) {
+        msgs.push("Please correct the date fields.");
+      }
+
+      if (msgs.length > 0) {
+        e.preventDefault();
+        showErrors(msgs);
+      }
     });
   </script>
 </body>
