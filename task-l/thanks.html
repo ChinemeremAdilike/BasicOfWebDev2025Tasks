@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Thank You – RentIt Car Rentals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
@@ -10,27 +11,22 @@
   <!-- Header -->
   <header class="bg-blue-900 text-white py-6 text-center">
     <h1 class="text-3xl font-bold">RentIt Car Rentals</h1>
-    <nav class="mt-2">
-      <a href="../task-i/index.html" class="underline">Home</a>
-      <a href="../task-i/task-j/catalog.html" class="underline ml-4">Catalog</a>
-      <a href="order.html" class="underline ml-4">Order</a>
+    <nav class="mt-4 flex justify-center space-x-6 text-sm font-semibold tracking-wide">
+      <a href="index.html" class="text-white hover:text-blue-300 uppercase">Home</a>
+      <a href="catalog.html" class="text-white hover:text-blue-300 uppercase">Catalog</a>
+      <a href="order.html" class="text-white hover:text-blue-300 uppercase">Order</a>
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main class="max-w-screen-md mx-auto px-4 py-12 text-center space-y-6">
-    <h2 class="text-2xl font-semibold text-green-700">Thank You!</h2>
-    <p>Your rental request has been received. We’ll review your details and contact you shortly to confirm your booking.</p>
-    <p class="text-gray-600">If you have any questions, feel free to reach out to us at <strong>info@rentit.fi</strong>.</p>
+  <!-- Confirmation Message -->
+  <main class="max-w-screen-md mx-auto px-4 py-16 text-center space-y-6">
+    <h2 class="text-3xl font-bold text-blue-900">Thank You!</h2>
+    <p class="text-lg">Your rental request has been received. We will review your details and contact you shortly to confirm your booking.</p>
+    <p class="text-sm text-gray-600">If you have any questions, feel free to reach out via email or phone.</p>
 
-    <div class="flex justify-center space-x-4 mt-6">
-      <a href="../task-i/index.html"
-         class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-        Back to Home
-      </a>
-      <a href="../task-i/task-j/catalog.html"
-         class="px-6 py-3 bg-blue-900 text-white rounded shadow hover:bg-blue-700 transition">
-        View Catalog
+    <div class="mt-8">
+      <a href="index.html" class="inline-block bg-blue-900 text-white px-6 py-2 rounded shadow hover:bg-blue-700 transition uppercase font-semibold">
+        Return to Home
       </a>
     </div>
   </main>
@@ -39,8 +35,8 @@
   <footer class="bg-blue-900 text-white py-6 text-center">
     <p>Contact us: info@rentit.fi | +358 46 550 0660</p>
     <div class="mt-2 space-x-4">
-      <a href="#" class="underline">Facebook</a>
-      <a href="#" class="underline">Instagram</a>
+      <a href="#" class="hover:text-blue-300 uppercase">Facebook</a>
+      <a href="#" class="hover:text-blue-300 uppercase">Instagram</a>
     </div>
   </footer>
 </body>
