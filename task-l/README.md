@@ -36,8 +36,8 @@ This folder contains the final refined version of the RentIt Car Rentals website
 
 ## GitHub Pages
 The live site is published here:  
-[https://chinemeremadilike.github.io/BasicOfWebDev2025Tasks/l/index.html](https://chinemeremadilike.github.io/BasicOfWebDev2025Tasks/l/index.html)
+[https://chinemeremadilike.github.io/BasicOfWebDev2025Tasks/task-l/index.html](https://chinemeremadilike.github.io/BasicOfWebDev2025Tasks/task-l/index.html)
 
 ## Repository
 Source code is available here:  
-[https://github.com/ChinemeremAdilike/BasicOfWebDev2025Tasks/tree/main/l](https://github.com/ChinemeremAdilike/BasicOfWebDev2025Tasks/tree/main/l)
+[https://github.com/ChinemeremAdilike/BasicOfWebDev2025Tasks/tree/main/task-l](https://github.com/ChinemeremAdilike/BasicOfWebDev2025Tasks/tree/main/task-l)
